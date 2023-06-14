@@ -1,0 +1,59 @@
+header{
+    width: 100%;
+    height: 100px;
+    background-color: rgb(37, 0, 139);
+    text-align: center;
+    font-weight: bold;
+    font-size: larger;
+    justify-content: center;
+    align-items: center;
+
+}
+h1{
+    font-weight: bold;
+    font-size: larger; 
+    text-align: center;  
+}
+.area-trabajo{
+   
+    font-family: Arial;
+}
+nav{
+    float: left;
+    width: 20%;
+    height: 400px;
+    background-color: aqua;
+}
+.article-area{
+    float: left;
+    width: 60%;
+    height: 400px;
+    background-color: darkslategray;
+}
+aside{
+    float: left;
+    width: 20%;
+    height: 400px;
+    background-color: royalblue;
+}
+footer{
+    float: left;
+    width: 100%;
+    height: 100px;
+    background-color: dimgray;
+    text-align: center;
+    font-weight: bold;
+    font-size: larger;
+}
+.clase-imagenes{
+    width: 20%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    margin-left: 1%;
+    
+}
+.area-presentacion{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap:nowrap;
+}

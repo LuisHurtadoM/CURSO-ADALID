@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles15.css">
+</head>
+<body>
+ <header>
+    <nav class="nav-bar">
+        <ul>
+          <li><a href="#">Inicio</a></li>
+          <li><a href="#">Noticias</a></li>
+          <li><a href="#">Contacto</a></li>
+          <li><a href="#">Sobre nosotros</a></li>
+          <li><a href="#">Ayuda</a></li>
+          <li><a href="#">Iniciar sesion</a></li>
+        </ul>
+      </nav>
+ </header>
+
+    <div class="estilo-formulario" ">
+        <form action="">
+            <div>
+                <label style="font-weight: bold;">Registro</label>
+                    <br><br>
+                <label for="nombre">Nombre</label>
+                <input type="text">
+                <br>
+                <br>
+            </div>
+            <div>
+
+                <label for="correo">Correo</label>
+                <input type="email">
+                <br>
+                <br>
+            </div>
+            <div>
+
+                <label for="fecha_nacimiento">Fecha de nacimiento</label>
+                <input type="date">
+                
+            </div>
+            <div>
+                <label for="edad">Mayor de edad</label>
+                <input type="radio" id="edad" name="fav_language" value="si">
+                <label for="edad">Si</label>
+                <input type="radio" id="edad" name="fav_language" value="no">
+                <label for="edad">No</label><br>
+                
+            </div>
+            <div>
+                <label for="pais">Pais de Origen</label>
+                <select name="pais" id="pais">
+                    <option value="Espana" selected>Espana</option>
+                    <option value="Colombia">Colombia</option>
+                    <option value="Andorra">Andorra</option>
+
+                </select>
+                <div>
+                    <label for="comentarios">Comentarios sobre ti</label><br>
+                        <textarea name="comentarios" id="comentarios" cols="30" rows="10" style="resize: none;">Escribe tu texto aqui</textarea>
+                </div>
+
+                <div>
+                    
+                    <input type="checkbox" id="consentimiento" checked>
+                    <label for="consentimiento">Declaro de acuerdo lo referente a la politica de tratamiento de datos</label>
+                </div>
+            </div>
+            <input type="submit" value="enviar">
+        </form>
+
+
+    </div>
+    <footer style="text-align: center; background-color: darkgray;">Todos los derechos reservados</footer>
+</body>
+</html>

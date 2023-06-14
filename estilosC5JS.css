@@ -1,0 +1,349 @@
+body{
+    font-family: "Montserrat";
+    background-color: beige;
+
+    display: inline;
+    display: flex;
+    width: 100%;
+    
+    /* font-family: 'Darker Grotesque', sans-serif;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Work Sans', sans-serif; */
+
+}
+ .area-trabajo{
+    display: inline;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    padding-bottom: 10%;
+    width: 100%;
+    
+} 
+ body{
+    background-color: beige;
+    font-family: 'Kanit', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+} 
+.area-trabajo{
+    display: flex;
+    flex-direction: column;
+    border: solid 1px gray;
+    
+} 
+.ejercicio1{
+    background-color: darkslategray;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-top: 2%;
+    padding-left: 1%;
+}
+.ejercicio2{
+    background-color: darkcyan;
+   margin-bottom: 1%;
+   margin-left: 10%;
+   margin-right: 10%;
+   padding-top: 2%;
+   padding-left: 1%;
+
+}
+.ejercicio3{
+    background-color: rgb(151, 89, 89);
+   margin-bottom: 1%;
+   margin-left: 10%;
+   margin-right: 10%;
+   padding-top: 2%;
+   padding-left: 1%;
+}
+.ejercicio4{
+    background-color: rgb(59, 63, 90);
+   margin-bottom: 1%;
+   margin-left: 10%;
+   margin-right: 10%;
+   padding-top: 2%;
+   padding-left: 1%;
+}
+.ejercicio5{
+    background-color: rgb(109, 109, 109);
+   margin-bottom: 1%;
+   margin-left: 10%;
+   margin-right: 10%;
+   padding-top: 2%;
+   padding-left: 1%;
+}
+.btnReg{
+    width: 100px;
+    height: 50px;
+    float: left;
+    background-color:deepskyblue;
+    border-radius: 5px;
+    margin-top: 1%;
+   margin-bottom: 10px;
+    font-family: 'Montserrat';
+    border-color: deepskyblue;
+    color: white;
+}
+.botones{
+   
+
+    float: left;
+}
+.ingreso1{
+    margin-left: 90px;
+}
+p{
+    
+    margin-bottom: 10px;
+}
+.boton{
+    justify-content: center;
+}
+.btnReg1{
+    width: 100px;
+    height: 50px;
+    align-content: center;
+    padding-bottom: 2%;
+    background-color:rgb(0, 255, 76);
+    border-radius: 5px;
+    font-family: 'Montserrat';
+    border-color: rgb(0, 255, 76);
+    color: white;
+}
+.btnReg:hover{
+    background-color: orangered;
+    border-color: orangered;
+    cursor:pointer;
+    
+}
+.btnReg1:hover{
+    background-color: orangered;
+    border-color: orangered;
+    cursor:pointer;
+    
+}
+.size0{
+    font-size: large;
+    letter-spacing: 5px;
+}
+.size1{
+    font-size: larger;
+    letter-spacing: 7px;
+}
+.size2{
+    font-size: x-large;
+    letter-spacing: 9px;
+}
+.size3{
+    font-size: xx-large;
+    letter-spacing: 11px;
+}
+
+.card{
+    margin-top: 2%;
+    margin-bottom: 5%;
+    width: 70%;
+    height: 38%;
+    border-style: solid 1px gray;
+    /*border-radius: 10px;*/
+    margin-left: auto;
+    margin-right: auto;
+    
+  
+}
+.inverso{
+    color: white;
+    
+}
+h1{
+    font-family: 'Kanit';
+    font-weight: normal;
+    font-size: 20px;
+    margin-bottom: 10px;
+    ;
+
+}
+a{
+    color: gray;
+}
+a:visited{
+    color: firebrick;
+}
+a:hover{
+    text-decoration: underline;
+    color: green;
+    font-weight: bold;
+}
+
+.enlace{
+    color: rgb(228, 214, 214);
+}
+.enlace:visited{
+    color: rgb(226, 65, 132);
+}
+.enlace:hover{
+    text-decoration: underline;
+    color: rgb(107, 212, 107);
+    font-weight: bold;
+}
+.enlace1{
+    color: rgb(155, 56, 56);
+    background-color: beige;
+    font-size: larger;
+    font-weight: bold;
+}
+.enlace1:visited{
+    color: rgb(70, 3, 31);
+    background-color: beige;
+    font-size: larger;
+    font-weight: bold;
+}
+.enlace1:hover{
+    text-decoration: underline;
+    color: rgb(40, 3, 88);
+    font-weight: bold;
+    background-color: beige;
+    font-size: larger;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#parrafoSaludo{
+    font-family: 'Montserrat';
+}
+.imagen1{
+    width: 70%;
+    margin-left: 15%;
+}
+.btnReg:hover{
+    background-color: orangered;
+    border-color: orangered;
+    cursor:pointer;
+    
+}
+.card-body{
+    
+   margin-left: 35%;
+}
+.formulario1{
+    background-color: beige;
+    padding-left: 2%;
+    padding-bottom: 2%;
+}
+.formulario2{
+    background-color: darkslategrey;
+    padding-left: 2%;
+    padding-bottom: 2%;
+}
+.formulario3{
+    background-color: lightgreen;
+    padding-left: 2%;
+    padding-bottom: 2%;
+}
+.formulario4{
+    
+    background-color: lightslategray;
+    padding-left: 2%;
+    padding-bottom: 2%;
+}
+.formulario5{
+    margin-top: 2%;
+    background-color: rgb(87, 10, 7);
+    padding-left: 2%;
+ 
+}
+.formulario6{
+    margin-top: 2%;
+    background-color: rgb(129, 154, 190);
+    padding-left: 2%;
+    padding-bottom: 2%;
+}
+.formulario7{
+    margin-top: 2%;
+    background-color: darkslategrey;
+    padding-left: 2%;
+    padding-bottom: 2%;
+}
+.formulario8{
+    margin-top: 2%;
+    background-color:thistle;
+    padding-left: 2%;
+    padding-bottom: 2%;
+}
+.formulario9{
+    margin-top: 2%;
+    background-color:white;
+    padding-left: 2%;
+    padding-bottom: 2%;
+    
+
+}
+.tarjeta{
+    
+    margin-top: 2%;
+    margin-bottom: 2%;
+    border-style: solid 1px gray;
+    border-radius: 10px;
+    display: flex;
+    
+
+}
+img{
+    width: 3%;
+}
+.imgFrm{
+    width: 400px;
+}
+.btnReg{
+    width: 100px;
+    float: left;
+    margin-right: 5px;
+    background-color:deepskyblue;
+    border-radius: 5px;
+    margin-top: 1%;
+    margin-bottom: 10px;
+    font-family: 'Montserrat';
+    border-color: deepskyblue;
+    color: white;
+}
+.formElement{
+    width: 95%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-left: 2%;
+    font-family: 'Montserrat';
+}
+.formulario{
+    font-family: 'Montserrat';
+    display: flex;
+    float: left;
+    width: 800px;
+    margin-left: 45px;
+    margin-right: 50px;
+    align-items:center;
+    border-radius: 15px;
+    padding-left: 2%;
+    padding-bottom: 5%;
+    border: solid 1px grey;
+
+}
+.tarjeta input{
+    border-top-style: none;
+    border-right-style: none;
+    border-bottom-style: solid;
+    border-left-style: none;
+}
+

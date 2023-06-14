@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accesibilidad y usabilidad</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,200;0,400;1,200&family=Montserrat:ital,wght@0,100;0,200;0,400;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque&family=Oswald&family=Work+Sans:wght@200;300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="estilosC5JS.css">
+    <link rel="stylesheet" href="nTema.css">
+</head>
+<body>
+    <div class="area-trabajo">
+        <div >
+           <h1> <p id="parrafo"></p></h1> 
+        </div>
+ 
+ 
+ 
+    </div>
+</body>
+
+<script>
+    var alumno1= {
+        nombre: "Luis",
+        materia1: "Matematicas",
+        notaM1:10,
+        materia2: "Quimica",
+        notaM2: 9,
+        materia3: "Fisica",
+        notaM3: 9.5,
+        materias: function (){return this.nombre+ "  " +this.materia1+ "  " +this.notaM1+ "  " +this.materia2+"  " + this.notaM2+ "  " +this.materia3+ "  " +this.notaM3}
+        
+    }
+    var alumno2= {
+        nombre: "Andrea",
+        materia1: "Matematicas",
+        notaM1:10,
+        materia2: "Quimica",
+        notaM2: 9.5,
+        materia3: "Fisica",
+        notaM3: 9.5,
+        materias: function (){return this.nombre+ "  " +this.materia1+ "  " +this.notaM1+ "  " +this.materia2+"  " + this.notaM2+ "  " +this.materia3+ "  " +this.notaM3}
+        
+    }
+        
+        console.log(alumno1.materias() + "  " + alumno2.materias());
+       document.getElementById('parrafo').innerHTML = alumno1.materias() + "  " + alumno2.materias();
+    
+    
+
+
+</script>
+
+</html>

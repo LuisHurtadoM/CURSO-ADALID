@@ -1,0 +1,21 @@
+.estilo-lista{
+    text-align: center;
+    
+}
+
+.lista-numerada{
+    border-style: solid;
+    
+    margin-left: 15%;
+    margin-right: 15%;
+    width: 70%;
+    border: 3px;
+    border-color: blue;
+    display: inline-block;
+    text-align: left;
+
+}
+.center {
+    text-align: center;
+    list-style-position: inside;
+  }

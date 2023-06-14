@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario 3</title>
+    <link rel="stylesheet" href="estilosformulario3.css">
+</head>
+<body class="area-trabajo">
+    <form action="">
+        <div class="area-formulario">
+            <div>
+                <img src="imagen.avif" alt="">
+            </div>
+                <div class="formulario">
+                    
+                    <p id="titulo">RESERVAR</p>
+                    <input class="campo" type="text" name="nombre" id="nombre" size="42" placeholder="Nombre" pattern="[\D\s]{2,25}" required>
+                    <input class="campo"  type="text" name="cumple" id="cumple" size="42" placeholder="Cumpleanos" pattern="(([0-9]{2,})([\/])([0-9]{2,})([\/])[0-9]{4,})" required>
+                    <input class="campo" type="text" name="sexo" id="sexo" size="10" placeholder="sexo" pattern="H|M|O" required>
+                    <input class="campo" type="text" name="codigo" id="codigo" size="12" placeholder="Codigo promocional" pattern="[A-F]-[0-9]{2,6}[Y-Z]">
+                    <div class="botones">
+                    <input class="boton" type="submit" name="enviar" id="enviar" value="Reservar">
+                    <input class="boton" type="reset" name="limpiar" id="limpiar" value="Limpiar">
+                    </div>
+                    
+                    
+
+                </div>
+
+            
+            
+    
+        </div>
+
+    </form>
+
+
+
+
+
+</body>
+</html>

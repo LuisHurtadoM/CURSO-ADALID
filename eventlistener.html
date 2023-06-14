@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="eventlistener.css">
+</head>
+<body>
+    <div id="listener">Area de escucha</div>
+    <div id="area2">
+        <p id="parrafo"></p>
+    </div>
+
+</body>
+    <script>
+        let listener = document.getElementById('listener');
+        listener.addEventListener("click", respuesta);
+        function respuesta(){
+            listener.innerHTML = "Has hecho click";
+        }
+
+        let area = document.getElementById('area2');
+        let parrafo = document.getElementById('parrafo');
+    
+        area.addEventListener("mousemove",reaccion);
+        area.addEventListener("mouseleave", reaccion2);
+
+        function reaccion(){
+
+            
+            area.style = "background-color: red";
+            parrafo.innerHTML = "Mouse move";
+        }
+        function reaccion2(){
+            area.style = "background-color: darkslategrey";
+            parrafo.innerHTML = "Mouse leave";
+        }
+
+    </script>
+</html>

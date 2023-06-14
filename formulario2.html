@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="estilosformulario2.css">
+</head>
+<body>
+    <form action="">
+        <div class="area-formulario">
+            <fieldset>
+                <legend class="form__label">Información básica</legend>
+
+                <div class="input-container">
+                    <label for="nombre" class="input-label">Nombre</label><br>
+                    <input type="text" class="input" name="nombre" id="nombre" placeholder="Escribe tu nombre" style="width: 100%;" required data-tipo="nombre">
+                    <span class="input-message-error">Este campo no es valido</span>
+                </div>
+                <div class="input-container">
+                    <label for="email" class="input-label">email</label><br>
+                    <input type="text" class="input" name="email" id="email"  style="width: 100%;" placeholder="micorreo@empresa.com" required pattern="[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*@[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*[.][a-zA-Z]{1,5}" title="Ingresa aqui una direccion de correo valida" data-tipo="email">
+                    <span class="input-message-error">Este campo no es valido</span>
+                </div>
+                <div class="input-container">
+                    <label for="password" class="input-label">Password</label><br>
+                    <input type="text" class="input" name="password" id="password"  style="width: 100%;"  required pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[$@$!%*?&])([A-Za-z\d$@$!%*?&]|[^ ]){8,15}$" title="Ingresa una contrasena de minimo 6 y maximo 15 caracteres, con una mayuscula, una minuscula, un numero y un simbolo" data-tipo="password">
+                    <span class="input-message-error">Este campo no es valido</span>
+                </div>
+                <div class="input-container">
+                    <label for="url" class="input-label">url</label><br>
+                    <input type="text" class="input" name="url" id="url"  style="width: 100%;" placeholder="http://miurl.com" pattern="https?:\/\/([a-zA-Z0-9]([^ @&%$\\\/()=?¿!.,:;]|\d)+[a-zA-Z0-9][\.])+[a-zA-Z0-9]{2,4}([\.][a-zA-Z]{2})?" required maxlength="45" title="Ingresa una url valida" data-tipo="url">
+                    <span class="input-message-error">Este campo no es valido</span>
+                </div>
+            </fieldset>
+
+            <div class="contenedor">
+                <label for="asunto" class="input-label">Asunto</label><br>
+                <textarea class="textarea" name="asunto" id="asunto" cols="65" rows="3" required style="resize: none;"></textarea><br><br>
+                <label for="medio" class="input-label">Como nos has conocido?</label><br>
+                <input type="radio" name="medio" id="medio" value="amigo">
+                <label for="medio" class="input-label">Amigo</label>
+                <input type="radio" name="medio" id="medio" value="Google">
+                <label for="medio" class="input-label">Google</label>
+                <input type="radio" name="medio" id="medio" value="impreso">
+                <label for="medio">Medio impreso</label>
+                <input type="radio" name="medio" id="medio" value="otro">
+                <label for="medio">Otro</label><br><br>
+                <label for="mensaje">Mensaje</label><br>
+                <textarea class="textarea" name="mensaje" id="mensaje" cols="65" rows="5" required style="resize: none;"></textarea><br><br>
+                <input type="checkbox" name="politica" id="politica">
+                <label for="politica">He leido y acepto el <a href="">aviso legal</a> y <a href="">la politica de privacidad</a></label><br><br>
+                
+
+            </div>
+
+           
+            <input type="submit" value="enviar" style="margin-left: 20px;  width: 80px;">
+        </div>
+        
+    </form>
+    <script src="./js/app.js" type="module"></script>
+</body>
+</html>

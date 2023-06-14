@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,200;0,400;1,200&family=Montserrat:ital,wght@0,100;0,200;0,400;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque&family=Oswald&family=Work+Sans:wght@200;300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="estilosC5JS.css">
+ 
+</head>
+<body>
+    <div class="area-trabajo">
+        
+            <div class="ejercicio1">
+                <h1 class="inverso">Ejercicio 1 [Colores]</h1>
+                <div>
+                    <input type="text" id="color1" placeholder="Ingrese color" >
+                    <input type="text" id="color2" placeholder="Ingrese color" >
+                    <input type="text" id="color3" placeholder="Ingrese color" >
+              
+                </div>
+
+                <div>
+                    <button  class="btnReg"onclick="colores()">Ejecutar</button>
+                    
+                    <p id="parrafo"></p>
+                </div>
+
+            </div>
+
+            <div class="ejercicio2">
+                <h1 class="inverso">Ejercicio2 Calificacion</h1>
+                <div>
+                    <input type="number" id="notaexamen" placeholder="Ingrese su nota" >
+                    
+              
+                </div>
+
+                <div>
+                    <button  class="btnReg"onclick="nota()">Ingrese nota</button>
+                    
+                    <p id="parrafo1"></p>
+                </div>
+
+            </div>
+            
+            <div class="ejercicio3">
+                <h1 class="inverso">Ejercicio 3 Suma numeros pares  100</h1>
+                <div>
+
+              
+                </div>
+
+                <div>
+                    <button  class="btnReg"onclick="suma()">Generar suma</button>
+                    
+                    <p id="parrafo2"></p>
+                </div>
+
+            </div>
+
+            <div class="ejercicio4">
+                <h1 class="inverso">Ejercicio 4 Arrays</h1>
+                <div>
+
+              
+                </div>
+
+                <div>
+                    <button  class="btnReg"onclick="arreglo()">Ejecutar</button>
+                    
+                    <p id="parrafo3"></p>
+                    <p id="parrafo4"></p>
+                    <p id="parrafo5"></p>
+                </div>
+
+            </div>
+        
+    </div>
+
+</body>
+<script>
+      function colores(){
+        let colores=[];
+        colores[0]= document.getElementById('color1').value;
+        colores[1]= document.getElementById('color2').value;
+        colores[2]= document.getElementById('color3').value;
+
+        let text = "Su primer color favorito es..." + colores[0];
+        text += '<br>' + "su segundo color favorito es..." + colores[1];
+        text += '<br>' + "su tercer color favorito es..." + colores[2];
+
+        
+        document.getElementById('parrafo').style = "background-color:"+ colores[1];
+        document.getElementById('parrafo').innerHTML = text;
+      }  
+
+      function nota(){
+        let valorNota = +document.getElementById('notaexamen').value;
+        var texto = " ";
+        console.log(valorNota)
+
+        
+        if (valorNota<=4){
+            texto = "Insuficiente";
+        } else if (valorNota<= 6 && valorNota>4){
+            texto = "Bien";
+        } else if (valorNota>6 && valorNota<=8){
+            texto="Notable";
+        } else {
+            texto= "Sobresaliente";
+        } 
+        console.log(texto)
+        document.getElementById('parrafo1').innerHTML = texto;
+      }
+
+      function suma(){
+        var suma = 0
+        for (var i=1; i<=100; i++){
+             if (i%2 == 0) {
+            suma += i;
+            }
+         }
+            document.getElementById('parrafo2').innerHTML = suma;
+        }
+
+        function arreglo(){
+            let paises = ["chile","dinamarca","alemania","islandia","egipto","india","colombia"];
+             let uppercase = paises.map(element => element.toUpperCase());
+            
+            document.getElementById('parrafo3').innerHTML = uppercase;
+            console.log(uppercase);
+            uppercase.push('FRANCIA');
+            document.getElementById('parrafo4').innerHTML = uppercase;
+            console.log(uppercase);
+            uppercase.splice(0,1);
+            console.log(uppercase);
+            document.getElementById('parrafo5').innerHTML = uppercase;
+
+        }
+
+</script>
+</html>

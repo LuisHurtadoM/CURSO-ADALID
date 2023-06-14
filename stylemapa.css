@@ -1,0 +1,18 @@
+a{
+    text-decoration: none;
+    font-family: Verdana;
+}
+a:active{
+    font-size: larger;
+}
+a:visited{
+    color: gray;
+}
+a:hover{
+    color: darkolivegreen;
+    text-decoration: underline;
+}
+.mi-boton{
+    border: solid 2px crimson;
+    background-color: aquamarine;
+}

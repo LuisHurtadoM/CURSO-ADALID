@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,200;0,400;1,200&family=Montserrat:ital,wght@0,100;0,200;0,400;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque&family=Oswald&family=Work+Sans:wght@200;300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="estilosC5JS.css">
+ 
+</head>
+<body>
+    <div class="area-trabajo">
+        
+            <div class="ejercicio1">
+                <h1 class="inverso">Fibonacci usando fn recursiva</h1>
+                <div>
+                    <input type="number" id="numero" placeholder="Ingrese numero" title="Por favor ingrese un numero igual o mayor a 2" pattern="[0-9]>2" required>
+                    
+                </div>
+
+                <div>
+                    <button  class="btnReg"onclick="fibonacci()">Calcular Fibonacci</button>
+                    
+                    <p id="parrafo"></p>
+                </div>
+
+            </div>
+
+            <div class="ejercicio2">
+                <h1>Fibonacci usando for</h1>
+                <div>
+                    <input type="number" id="numero2" placeholder="Ingrese numero" title="Por favor ingrese un numero igual o mayor a 2" pattern="[0-9]>2" required>
+                    
+                </div>
+
+                <div>
+                    <button  class="btnReg"onclick="fibonacci2()">Calcular Fibonacci</button>
+                    
+                    <p id="resultado"></p>
+                </div>
+
+            </div>
+
+                <div class="ejercicio3">
+                    <h1>Lanzamiento de dado (RANDOM)</h1>
+                    <div>
+                        <button  class="btnReg"onclick="dado1()">Lanzar dado 1</button>
+                        <button  class="btnReg"onclick="dado2()">Lanzar dado 2</button>
+                        <p id="resultado3"></p>
+                        <p id="resultado4"></p>
+                    </div>
+
+
+                    
+                </div>
+
+                <div class="ejercicio4">
+                    <h1>Lanzamiento de dado x veces</h1>
+                    <div>
+                        <input type="number" id="numero5" placeholder="Nro. de veces">
+                        
+                    </div>
+                    <div>
+                        <button  class="btnReg"onclick="dado3()">Lanzar dado</button>
+                        
+                        <p id="resultado5"></p>
+                        
+                    </div>
+            
+                </div>
+
+                <div class="ejercicio5">
+                    <h1>Encontrar letra del DNI</h1>
+                    <div>
+                        <input type="text" id="dni" placeholder="Ingrese DNI con letra" minlength="8" maxlength="9" pattern="/^\d{8}[a-zA-Z]$/">
+                        
+                    </div>
+                    <div>
+                        <button  class="btnReg"onclick="dni()">Encontrar letra</button>
+                        
+                        <p id="resultado6"></p>
+                        
+                    </div>
+            
+                </div>
+        
+    </div>
+
+</body>
+<script>
+        function fibonacci(){
+        x = +document.getElementById('numero').value;
+        let fibo = calcularFibonacci(x);
+
+        function calcularFibonacci(y){
+
+            if (y<=2){
+                return 1
+            }else{
+                return (calcularFibonacci(y-1) + calcularFibonacci(y-2))
+            }
+        }
+        document.getElementById('parrafo').innerHTML = "La serie de Fibonacci para la posicion " + x + " es igual a la suma de las posiciones "+ (x-1) + " y "+ (x-2)+ " la cual es=  " + fibo
+        }
+        function fibonacci2(){
+            
+            var x = 0;
+            var valor = document.getElementById('numero2').value;
+            var arreglo = [];
+            valor = parseInt(valor);
+            for (x; x<valor; x++){
+                if(x==0){
+                    arreglo.push(0);
+                }
+                else if(x==1){
+                    arreglo.push(1);
+                }
+                else{
+                    arreglo.push(arreglo[x-1]+arreglo[x-2]);
+                }
+            }
+            let result = arreglo[valor -1] + arreglo[valor-2];
+            document.getElementById("resultado").innerHTML ="La serie de Fibonacci es igual a:  " + result+"</h3>";
+        }
+
+        function dado1(){
+            
+            let numerodado1 = lanzardado(1,6)
+            function lanzardado(min, max) {
+              return Math.round(Math.random() * (max - min) + min);
+        }
+            document.getElementById('resultado3').innerHTML = "El numero en dado 1 fue: " + numerodado1;
+        }
+        
+        function dado2(){
+
+            let numerodado2 = lanzardado(1,6)
+            function lanzardado(min, max) {
+              return Math.round(Math.random() * (max - min) + min);
+        }
+            document.getElementById('resultado4').innerHTML = "El numero en dado 2 fue: " + numerodado2;
+        }
+
+        function lanzardado(min, max) {
+              return Math.round(Math.random() * (max - min) + min);
+        }
+        function dado3(){
+
+            let resultados = [0,0,0,0,0,0];
+            let texto="";
+            x = +document.getElementById('numero5').value;
+            for(i=0; i<x;i++){
+                y = lanzardado(1,6);
+                console.log(y)
+                resultados[y-1]+= 1;
+
+            }
+            console.log(resultados);
+
+            // let texto ='<strong>' + "la frecuencia de incidencia de los numeros en : " + x +'</strong>' +'<br>';
+            //  texto += '<strong>' +"El contenido del arreglo es"+ '</strong>' +'<br>';
+            for (let i=0; i<6;i++){
+                texto +=  (i+1)  +" ha ocurrido " + resultados[i]   + " veces "+'<br>' ;
+            }
+
+            document.getElementById('resultado5').innerHTML= texto; 
+                
+            } 
+             
+            function dni(){
+                let letras = ["T","R","W","A","G","M","Y","F","P","D","X","B","N","J","Z","S","Q","V","H","L","C","K","E"];
+                let dniIngresado = document.getElementById('dni').value;
+                let letraDNI = dniIngresado.substr(-1,1);
+                letraDNI= letraDNI.toUpperCase();
+                dniIngresado= dniIngresado.slice(0, -1);
+                
+                numero = parseInt(dniIngresado);
+                console.log(letraDNI, numero);
+                let resultado= (numero%23);
+                let text = numero + "  "+ letras[resultado];
+                if (letraDNI != letras[resultado]){
+                    text = "El DNI ingresado no es invalido. La letra deberia ser " + letras[resultado] ;
+                    document.getElementById('resultado6').innerHTML = text;
+                } else {
+                    text = "el DNI ingresado es valido ";
+                    document.getElementById('resultado6').innerHTML = text;
+                }
+
+                
+
+            }
+
+</script>
+</html>

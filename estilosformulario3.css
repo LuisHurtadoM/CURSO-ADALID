@@ -1,0 +1,53 @@
+.area-trabajo{
+    background-color:hotpink;
+    
+    
+}
+form{
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+.area-formulario{
+    margin-top: 10%;
+    margin-bottom: 10%;
+    margin-left: 200px;
+      
+}
+.botones{
+    width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.boton{
+    
+    background-color: rgb(12, 100, 4);
+    height: 30px;
+    width: 100px;
+    border-radius: 10px;
+}
+img{
+    width: 30%;
+    height: 350px;
+    float:left;
+    
+}
+.campo{
+    padding-top: 2%;
+    margin-top: 1%;
+    margin-left: 1%;
+    padding-bottom: 2%;
+    width: 350px;
+}
+.formulario{
+
+    width: 400px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    background-color: antiquewhite;
+}

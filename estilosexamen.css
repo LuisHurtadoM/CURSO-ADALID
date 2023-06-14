@@ -1,0 +1,73 @@
+    .area-trabajo{
+        font-family: Verdana;
+    }
+
+    h1{
+    background-color: gray;
+    color: wheat;
+    text-align: left;
+    }
+ .encabezado2{
+    font-style:normal;
+    color: black;
+    font-weight: 400;
+  
+    
+  }
+  .lista{
+    text-decoration-style: dotted;
+    list-style: circle;
+    float: none;
+  }
+  li{
+    list-style-type: none;
+    text-decoration: none;
+    float: left;
+  }
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 14px;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    background-color: #e9b5b5;
+  }
+  .encabezado2:hover{
+    background-color: aqua;
+  }
+  table {
+    font-family: 'Lucida Sans';
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  tr{
+    border: 1px solid #dddddd;
+  }
+  
+  td {
+    width: 33%;
+     border: 1px solid #dddddd; 
+    text-align: left;
+    padding: 8px;
+    
+  }
+  th {
+    width: 33%;
+    
+    text-align: left;
+    padding: 8px;
+  }
+
+  .contenedor-listas{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+
+    
+}

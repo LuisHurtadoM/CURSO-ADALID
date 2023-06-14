@@ -1,0 +1,36 @@
+body{
+    font-family: "Montserrat";
+    background-color: rgb(221, 221, 165);
+}
+h1{
+    font-family: 'Kanit';
+    font-weight: normal;
+
+}
+.area-trabajo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+.ejercicio1{
+    background-color: darkslategray;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-top: 2%;
+    padding-left: 1%;
+}
+.btnReg{
+    float: left;
+    width: 100px;
+    height: 50px;
+    margin-right: 5px;
+    background-color:deepskyblue;
+    border-radius: 5px;
+
+    font-family: 'Montserrat';
+    border-color: deepskyblue;
+    color: white;
+}

@@ -1,0 +1,27 @@
+.estilo-tabla{
+    margin-left: auto;
+    margin-right: auto;
+    border: solid 3px rgb(12, 12, 12);
+    border-collapse: collapse;
+    margin-left: 5%;
+    margin-top: 5%;
+    margin-right: 5%;
+    margin-bottom: 5%;
+    width: 600px;
+    height:600px;
+    font-size: 32px;
+    text-align: center;
+}
+.estilo-celda{
+    border: solid 3px black;
+    width: 25%;
+    height: 25%;
+    margin-left: 5%;
+    margin-top: 5%;
+    margin-right: 5%;
+    margin-bottom: 5%;
+    padding-left: 5%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    padding-right: 5%;
+}

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="StylesC2JS.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,200;0,400;1,200&family=Montserrat:ital,wght@0,100;0,200;0,400;1,700&display=swap" rel="stylesheet">
+</head>
+
+<body class="area-trabajo card">
+    <div >
+
+        <div class="formulario1" id="frm1">
+            <h1>Ejercicios 1, 2 y 3</h1>
+            <div>
+                
+                <input type="text" name="numero1" id="nombre" placeholder="Nombre">
+            </div>
+            <div>
+                
+                <input type="text" name="numero2" id="apellido" placeholder="Apellido">
+            </div>
+            <div>
+                
+                <input type="date" name="fechanacimiento" id="fnacimiento" >
+            </div>
+    
+            <div>
+                <button class="btnReg" onclick="alertar()"> Ejecutar</button>
+            </div>
+
+        </div>
+
+        <div>
+            <p id="parrafoSaludo"></p>
+        </div>
+
+        <div class="formulario2" id="frm2">
+            <div>
+                <h1 class="inverso">Ejercicios 4 y 5</h1>
+                <input type="text" name="numero1" id="nombre1" placeholder="Nombre" pattern="[a-zA-Z]\d" required>
+            </div>
+            <div>
+                
+                <input type="text" name="numero2" id="apellido1" placeholder="Apellido" pattern="[a-zA-Z]\d" required>
+            </div>
+            <div>
+                
+                <input type="text" name="numeroTel" id="telefono" placeholder="Telefono" maxlength="">
+            </div>
+
+    
+            <div>
+                 <button class="btnReg" onclick="telefono()"> Ejecutar</button>
+            </div>
+
+        </div>
+
+        <div>
+            <p id="parrafoSaludo1"></p>
+        </div>
+    
+        <div class="formulario3" id="frm3">
+            <div>
+                <h1>Ejercicio 6</h1>
+                <input type="text" name="numero2" id="nombre2" placeholder="Nombre" pattern="[a-zA-Z]\d" required>
+            </div>
+            <div>
+                
+                <input type="text" name="numero2" id="apellido2" placeholder="Apellido" pattern="[a-zA-Z]\d" required>
+            </div>
+            <div>
+                
+                <input type="text" name="numeroTel" id="telefono2" placeholder="(34) XXX-XX-XX-XX" pattern="(34) [0-9]{3}-[0-9]{2}-[0-9]{2}-[0-9]{2}" required>
+            </div>
+
+    
+                <div>
+                    <button onclick="modificarParrafo()"> Ejecutar</button>
+                </div>
+    
+        </div>
+        
+    </div>
+    
+            <div>
+                <p id="parrafoSaludo2"></p>
+                <hr>
+                <p id="parrafoSaludo3"></p>
+            </div>
+    
+            <div class="formulario4">
+                <h1 class="inverso">Ejercicio 7</h1>
+                <img id="card-img-top" src="p5.avif" alt="Imagen 1 Vista de ciudad" class="imagen1">
+                <div id="card-body" class="card-body">
+                    <p id="card-text"></p>
+        
+                    <button onclick="document.getElementById('card-img-top').src='p6.avif'" id="btn2" alt="Imagen 2 Vista Cibeles"> Cambiar imagen 1</button>
+                    <button onclick="document.getElementById('card-img-top').src='p5.avif'" id="btn2" alt="Imagen 1 Vista de ciudad"> Cambiar imagen 2</button>
+                    
+                </div>
+  
+            </div>
+        
+            <div class="formulario5">
+                <h1 class="inverso">Ejercicio 8</h1>
+                <input type="number" name="" id="radio" placeholder="ingresa un valor para el radio del circulo">
+                <button onclick="calcularPi(document.getElementById('radio').value)">Calcular</button>
+                <p id="mensajeAreaPerimetro"></p>
+                
+            </div>
+
+            <div class="formulario6">
+                <h1>Ejercicio 9</h1>
+                <input type="text" id="precio" placeholder="Ingresa el precio">
+                <button onclick="calculaIva(document.getElementById('precio').value)">Calcular</button>
+                <p id="textoIva"></p>
+            </div>
+
+            <div class="formulario7">
+                <h1>Ejercicio 10</h1>
+                <input type="number" id="numero" placeholder="Ingresa un numero">
+                <button onclick="verificar()">Par o Impar</button>
+                <p id="parImpar"></p>
+            </div>
+
+            <div class="formulario8" id="formulario8">
+                <h1>Ejercicio 11</h1>
+                <p id="aBorar">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi facilis nulla dolores sapiente reprehenderit fuga magnam accusantium velit, voluptatem, vel cumque assumenda suscipit vitae earum similique necessitatibus nesciunt non rem? Cumque vitae laboriosam aliquam labore doloremque iure aperiam, quae, aliquid qui voluptate aspernatur inventore esse sequi. Nulla consequatur iure modi ipsam voluptates repellendus delectus nam! Libero inventore a quos. Nemo. Adipisci, sapiente necessitatibus numquam sunt asperiores placeat! Temporibus, assumenda cum quidem nihil ea adipisci id officia numquam eligendi nisi! Aliquid laudantium excepturi accusamus est eveniet voluptatum quis id porro sed.</p><br>
+                <a href="#formulario8" onclick="eliminar()">Ocultar parrafo</a>
+                <a href="#formulario8" onclick="regresar()">Mostrar parrafo</a>
+                <button onclick="eliminar()">Ocultar parrafo</button>
+                <button onclick="regresar()">Mostrar parrafo</button>
+            </div>
+
+            <div class="formulario9">
+                <h1>Ejercicio 12</h1>
+                <div class="tarjeta">
+
+                    <div class="formulario">
+                        <form action="">
+                            <h1 style="text-align: right;">sign up</h1>
+                            <img src="user-solid.svg" alt="">
+                            <input type="text" id="nombreForm" placeholder="Name" class="formElement" >
+                            <img src="envelope-solid.svg" alt="">
+                            <input type="text" id="nombreForm" placeholder="email"class="formElement">
+                            <img src="lock-solid.svg" alt="">
+                            <input type="password" id="nombreForm" placeholder="password" class="formElement">
+                            <img src="lock-open-solid.svg" alt="">
+                            <input type="password" id="nombreForm" placeholder="Repeat your password" class="formElement">
+                            <input type="checkbox" name="acuerdo" id="acuerdo">
+                            <label for="acuerdo">I agree all statements in <a href="">Terms of service</a></label>
+                            <br>
+                            <button class="btnReg">Register</button>
+    
+                        </form>
+
+                        <div>
+                            
+                            <img src="interior_office.jpg" alt="" class="imgFrm" >
+                            <p style="margin-left: 150px;"><a href="">I am already a member</a></p>
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+            <div class="formulario10">
+                <h1>Ejercicio Comparacion numero mayor</h1>
+                <input type="number" id="num1" placeholder="Ingresa el primer numero">
+                <input type="number" id="num2" placeholder="Ingresa el segundo numero">
+                <input type="number" id="num3" placeholder="Ingresa el tercer numero">
+                <button onclick="mayorNumero()">Calcular</button>
+                <p id="textoMayor"></p>
+            </div>
+    </div>
+
+
+
+    <script src="clase2.js"></script>
+
+    
+</body>
+</html>

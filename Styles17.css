@@ -1,0 +1,8 @@
+.contenedor{
+    display: flex;
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+    align-content: space-between;
+    justify-content: space-around;
+
+}

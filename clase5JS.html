@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,200;0,400;1,200&family=Montserrat:ital,wght@0,100;0,200;0,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="estilosC5JS.css">
+</head>
+<body>
+    <div class="area-trabajo">
+
+        <div class="ejercicio1">
+            <div class="ingreso1">
+                <input type="number" name="numero" id="numero" placeholder="ingrese numero">
+            </div>
+            <div class="botones">
+                <button class="btnReg" onclick="agregar()">Agregar</button>
+                <button class="btnReg" onclick="eliminar()">Eliminar</button>
+                <button class="btnReg" onclick="mayorNumero()">Mayor</button>
+            </div>
+            
+            <p id="parrafo"></p>
+            
+        </div>
+<!--
+         <div class="ejercicio2">
+            <h1>String</h1>
+
+            <div class="boton">
+                <button class="btnReg" class="btnReg" onclick="mostrarSuma()">Terminar</button>
+            </div>
+            <div>
+                <p id="resultado"></p>
+
+            </div>
+
+
+
+
+        </div>
+        <div class="ejercicio3">
+            <div>
+                <div>
+                    <button class="btnReg1" onclick="agregarValor1(0)">Agregar Bocadillo</button>
+                    
+                </div>
+                <div>
+                    <button class="btnReg1" onclick="agregarValor1(1)">Agregar Coca-Cola</button>
+                </div>
+                <div>
+                    <button  class="btnReg1"onclick="agregarValor1(2)">Agregar Xuxe</button>
+                </div>
+
+
+
+                <div class="boton">
+                    <button class="btnReg" class="btnReg" onclick="mostrarSuma1()">Terminar</button>
+                </div>
+            </div>
+            <div>
+                <p id="resultado1"></p>
+
+            </div>
+
+
+
+    </div>
+    <div class="ejercicio6">
+        <button class="btnReg" onclick="nombres()">Mostrar contenido</button>
+        <p id="parrafo2"></p>
+        
+    </div> -->
+    </div>
+</body>
+    <script>
+
+        // Ejemplo Array mostrando el contenido y posicion de cada uno
+
+        let colores=[1,5,15,25];
+
+        function agregar(){
+            num = parseInt(document.getElementById('numero').value)
+            
+            colores.push(num);
+            x = colores.length;
+            let texto ='<strong>' + "El arreglo tiene una dimension de: " + x +'</strong>' +'<br>';
+             texto += '<strong>' +"El contenido del arreglo es"+ '</strong>' +'<br>';
+            for (let i=0; i<x;i++){
+                texto += " elemento " + '<strong>' + i +  '</strong>' + " " + colores[i] +'<br>';
+            }
+
+            document.getElementById('parrafo').innerHTML = texto;
+        }
+        function eliminar(){
+            
+            colores.pop();
+            x= colores.length
+            let texto ='<strong>' + "El arreglo tiene una dimension de: " + x +'</strong>' +'<br>';
+            texto += '<strong>' +"El contenido del arreglo es"+ '</strong>' +'<br>';
+            for (let i=0; i<x;i++) {
+                texto += " elemento " + '<strong>' + i +  '</strong>' + " " + colores[i] +'<br>';
+
+            }
+            document.getElementById('parrafo').innerHTML = texto;
+        }
+        var suma = 0;
+
+        function mayorNumero(){
+           
+            x = colores.length;
+            let texto = "El numero mayor del arreglo es: ";
+            let mayor = colores[0];
+            for (let i=0; i<x;i++) {
+                if (colores[i]> mayor) {
+                    mayor = colores[i];
+                    
+                }
+                
+            }
+            texto += +" " + mayor;
+            document.getElementById('parrafo').innerHTML = texto;
+
+        }
+        // Ejemplo expendedora utilizando Array para almacenar los precios
+        
+
+        let precios = [2,1.5,0.9];
+
+        function agregarValor(i) {
+            suma += precios[i];
+        }
+
+        function mostrarSuma() {
+        var resultadoElement = document.getElementById("resultado");
+        resultadoElement.textContent = "La suma de los valores es: " + suma.toFixed(2);
+        suma = 0;
+        }
+
+        // Ejemplo de forEach incrementando precios en la expendedora
+
+
+       
+        
+        function cambiarPrecios(item, indice, arr){
+           arr[indice] = item*1.15;
+       }
+
+        function agregarValor1(i) {
+            precios.forEach(cambiarPrecios);
+            
+            suma += precios[i];
+        }
+
+
+
+        function mostrarSuma1() {
+            
+        var resultadoElement = document.getElementById("resultado1");
+        resultadoElement.textContent = "La suma de los valores es: " + suma.toFixed(2);
+        
+        suma = 0;
+        }
+
+        // Ejemplo arreglo con nombres, para mostrar en pantalla
+
+        function nombres(){
+            let nombres=["Luis", "Rodolfo", "Hurtado", "Mejia", "Ibarguen", "Vinazco"];
+            nombres[nombres.length]="Hijo";
+            x = nombres.length;
+            let texto ='<strong>' + "El arreglo tiene una dimension de: " + x +'</strong>' +'<br>';
+             texto += '<strong>' +"El contenido del arreglo es"+ '</strong>' +'<br>';
+            for (let i=0; i<x;i++){
+                texto +=  " " + nombres[i] ;
+            }
+
+            document.getElementById('parrafo2').innerHTML = texto;
+        }
+
+    </script>
+</html>

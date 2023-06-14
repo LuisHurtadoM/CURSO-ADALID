@@ -1,0 +1,27 @@
+html, body {
+    background-image: url("background.jpeg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    min-height: 100%;
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
+   
+}
+.area-trabajo{
+    background-color: green;
+    background-image: none;
+    border-radius: 20px;
+    width: 80%;
+    justify-content: space-evenly;
+}
+
+.area-formulario{
+    height: 100px;
+    padding-top: 5px;
+    margin-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    justify-content: space-between;
+}

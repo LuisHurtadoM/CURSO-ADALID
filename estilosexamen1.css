@@ -1,0 +1,46 @@
+a{
+  text-decoration: none;  
+}
+a:visited{
+    color: red;
+}
+.contenido{
+    font-family: Arial;
+}
+.titulo{
+    background-color: gray;
+    color: white;
+}
+.titulo2{
+    font-weight: bold;
+    text-decoration: underline;
+}
+.contenido-tabla{
+    width: 100%;
+}
+tr{
+    border: 1px solid #dddddd;
+  }
+  
+  td {
+    text-align: left;
+    padding: 8px;
+    
+  }
+  th {
+    width: 33%;
+    
+    text-align: left;
+    padding: 8px;
+  }
+  li{
+    list-style-type: none;
+  }
+
+  .encabezado2{
+    border: solid 1px grey;
+  }
+  .encabezado2:hover{
+    background-color: gray;
+    color: white;
+  }

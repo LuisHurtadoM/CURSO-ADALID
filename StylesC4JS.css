@@ -1,0 +1,9 @@
+body{
+    background-color: beige;
+    font-family: 'Kanit', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+}
+.area-trabajo{
+    display: flex;
+
+}

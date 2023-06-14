@@ -1,0 +1,41 @@
+.cuerpo{
+    background-color: beige;
+}
+.elemento{
+    font-weight: bold;
+}
+.titulo-pagina{
+    color: green;
+    text-align: center;
+    background-color: aqua;
+}
+.subtituloa-pagina{
+    color: rgb(16, 230, 45);
+}
+.imagen-pagina {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+    height: 20%;
+}
+.texto-imagen{
+    text-align: center;
+    font-weight: 300;
+    font-style: italic;
+    font-family: Arial;
+    color: gray;
+}
+.contenedor{
+    display: flex;
+    justify-content: center;
+}
+.imagen2-pagina{
+    border-radius: 50%;
+}
+.pie-pagina{
+    text-align: right;
+    background-color: aqua;
+    color: green;
+    font-weight: bold;
+}

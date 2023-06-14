@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maquina expendedora</title>
+    <link rel="stylesheet" href="estilosExpendedora.css">
+</head>
+<body>
+    
+    <div>
+
+        <div>
+
+            <div>
+                <button onclick="agregarValor(2)">Agregar Bocadillo</button>
+                
+            </div>
+            <div>
+                <button onclick="agregarValor(1)">Agregar Coca-Cola</button>
+            </div>
+            <div>
+                <button onclick="agregarValor(0.9)">Agregar Xuxe</button>
+            </div>
+            <div>
+                <button onclick="mostrarSuma()">Terminar</button>
+            </div>
+            <div>
+                <p id="resultado"></p>
+
+            </div>
+        </div>
+
+    </div>
+
+<!--     <button onclick="agregarValor(2)">Bocadillo</button>
+    <button onclick="agregarValor(1)">Coca-Cola</button>
+    <button onclick="agregarValor(0.9)">Xuxe</button>
+    <button onclick="terminar()">Terminar</button>
+  
+    <p id="resultado"></p>
+   -->
+
+    
+    
+  
+
+
+
+
+</body>
+     <script>
+        var suma = 0;
+
+        function agregarValor(valor) {
+        suma += valor;
+        }
+
+        function mostrarSuma() {
+        var resultadoElement = document.getElementById("resultado");
+        resultadoElement.textContent = "La suma de los valores es: " + suma;
+        suma = 0;
+        }
+
+        
+    </script>
+</html>

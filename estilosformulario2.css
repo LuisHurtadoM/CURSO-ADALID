@@ -1,0 +1,91 @@
+@import url(_variables.css);
+
+.area-formulario{
+    background-color:aquamarine;
+    border-radius: 15px;
+    width: 40%;
+    padding-top: 1%;
+    padding-left: 1%;
+    padding-right: 1%;
+    padding-bottom: 1%;
+    font-family: Tahoma;
+
+}
+
+.input-message-error {
+    display: none;
+  }
+
+.input-container {
+    font-weight: var(--font-weigth-input);
+    position: relative;
+    margin-bottom: 0.25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    box-sizing: border-box;
+    
+  }
+  .contenedor{
+    margin-left: 20px;
+    margin-right: auto;
+  }
+  
+  .input {
+    box-sizing: border-box;
+   /*  border-bottom: 1px solid var(--secondary-color); */
+    padding: 1.375rem 0.5rem 0.5rem;
+    height: 1.25rem;
+    border-radius: 7px;
+    
+  }
+  .textarea{
+    border-radius: 7px;
+  }
+  
+  .input::placeholder {
+    visibility: hidden;
+    color: #00000000;
+  }
+  
+  .input:focus {
+    outline: none;
+  }
+  
+/*   .input-label {
+    position: absolute;
+    top: 1.375rem;
+    left: 0.5rem;
+    font-size: var(--font-size-input-label);
+  
+    transition: all 0.25s;
+  } */
+  
+  .input:not(:placeholder-shown) + .input-label,
+  .input:focus + .input-label {
+    font-size: 0.875rem;
+    top: 0.25rem;
+    transition: all 0.25s;
+  }
+  
+  .input-container--invalid {
+    margin-bottom: 0.5rem;
+  }
+  
+  .input-container--invalid .input {
+    border: 1px solid var(--warning-color);
+    border-radius: 7px;
+  }
+  
+  .input-container--invalid .input-label {
+    color: var(--warning-color);
+  }
+  
+
+  
+  .input-container--invalid .input-message-error {
+    color: var(--warning-color);
+    display: block;
+    margin-top: 0.5rem;
+    padding-left: 0.5rem;
+  }

@@ -1,0 +1,163 @@
+    .fotos-container{
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        grid-template-rows: auto auto auto;
+        background-color: #f5f7f8;
+        padding: 10px;
+        width: 1200px;
+        height: 800px;
+        margin-left: auto;
+        margin-right: auto;
+        
+
+    }
+
+    .grid-foto{
+        background-color: rgba(255, 255, 255, 0.8);
+        border: 1px solid rgba(233, 227, 227, 0.8);
+        margin: 2px 2px 2px 2px;
+        
+        
+    }
+
+
+
+    .funo{
+
+        grid-row: 1 / span 2;
+        grid-column: 1;
+        text-align: center;
+        border:hidden;
+        background-image: url(./img2.jpg);
+        background-size:cover;
+        background-repeat: no-repeat;
+        border-radius: 20px;
+        margin-left: 5px;
+        margin-bottom: 5px;
+    }
+
+
+    .fdos{
+    
+        grid-row: 3;
+        grid-column: 1;
+        text-align: center;
+        border:hidden;
+        background-image: url(./img1.jpg);
+        background-size:cover;
+        background-repeat: no-repeat;
+        border-radius: 20px;
+        margin-left: 5px;
+        margin-bottom: 5px;
+    }
+
+    .ftres{
+        grid-row: 1;
+        grid-column: 2;
+        text-align: center;
+        border:hidden;
+        background-image: url(./p3.avif);
+        background-size:cover;
+        background-repeat: no-repeat;
+        border-radius: 20px;
+        margin-left: 5px;
+        margin-bottom: 5px;
+    }
+
+    .fcuatro{
+        grid-column: 2;
+        grid-row: 2 / span 2;
+        text-align: center;
+        border:hidden;
+        background-image: url(./p4.avif);
+        background-size:cover;
+        background-repeat: no-repeat;
+        border-radius: 20px;
+        margin-left: 5px;
+        margin-bottom: 5px;
+    }
+
+    .fcinco{
+        grid-row: 1;
+        grid-column: 3 / span 2;
+        text-align: center;
+        border:hidden;
+        background-image: url(./p5.avif);
+        background-size:cover;
+        background-repeat: no-repeat;
+        border-radius: 20px;
+        margin-left: 5px;
+        margin-bottom: 5px;
+    }
+
+    .fseis{
+        grid-row: 2;
+        grid-column: 3;
+        text-align: center;
+        border:hidden;
+        background-image: url(./p6.avif);
+        background-size:cover;
+        background-repeat: no-repeat;
+        border-radius: 20px;
+        margin-left: 5px;
+        margin-bottom: 5px;
+    }
+
+    .fsiete{
+        grid-row: 2;
+        grid-column: 4;
+        text-align: center;
+        border:hidden;
+        background-image: url(./p1.avif);
+        background-size:cover;
+        background-repeat: no-repeat;
+        border-radius: 20px;
+        margin-left: 5px;
+        margin-bottom: 5px;
+    }
+
+    .focho{
+        grid-row: 3;
+        grid-column: 3 / span 2;
+        text-align: center;
+        border:hidden;
+        background-image: url(./p4.avif);
+        background-size:cover;
+        background-repeat: no-repeat;
+        border-radius: 20px;
+        margin-left: 5px;
+        margin-bottom: 5px;
+    }
+
+    @media (width<=576px){
+        .fotos-container{
+            grid-template-columns: repeat(1,1fr);
+            width: 90%;
+            background-color: yellow;
+        }
+        .grid-foto{
+            grid-column: span 1!important;
+            grid-row: span 1!important;
+            height: 100%;
+        }
+    }
+
+    @media only screen and (min-width: 576px) and (max-width: 992px) {
+        
+
+        .fotos-container{
+            grid-template-columns: repeat(2,2fr);
+            width: 90%;
+            background-color: blueviolet;
+        }
+        .grid-foto{
+            grid-column: span 1!important;
+            grid-row: span 1!important;
+            width: 90%;
+            height: 100%;
+        }
+
+
+    }
+
+  

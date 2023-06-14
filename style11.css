@@ -1,0 +1,9 @@
+.contenedor-listas{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+
+    
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,200;0,400;1,200&family=Montserrat:ital,wght@0,100;0,200;0,400;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque&family=Oswald&family=Work+Sans:wght@200;300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="estilosC5JS.css">
+    <title>Accesibilidad</title>
+</head>
+<body class="area-trabajo">
+    <div class="ejercicio1">
+        <div>
+            <button onclick="aumentar()" class=" btnReg">Aumentar</button>
+            <button onclick="modificar()" class=" btnReg">Enlace</button>
+        </div>
+        <div>
+            <p id="texto" class="size"><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. </span></p>
+            <a href="http://google.com" id="enlaces" class="enlace">Pinchar aqui</a>
+            
+        </div>
+    </div>
+</body>
+<script>
+    function aumentar(){
+        x= document.getElementById('texto').classList.item(0);
+        if (x == 'size') {
+            document.getElementById('texto').classList.remove('size');
+            document.getElementById('texto').classList.add('size0');
+        } else if (x == 'size0') {
+            document.getElementById('texto').classList.remove('size0');
+            document.getElementById('texto').classList.add('size1');
+        } else if (x == 'size1') {
+            document.getElementById('texto').classList.remove('size1');
+            document.getElementById('texto').classList.add('size2');
+        } else if (x == 'size2') {
+            document.getElementById('texto').classList.remove('size2');
+            document.getElementById('texto').classList.add('size3');
+        } else {
+            document.getElementById('texto').classList.remove('size3');
+            document.getElementById('texto').classList.add('size');
+        }
+        
+
+    }
+
+    function modificar(){
+        x = document.getElementById('enlaces').classList.item(0);
+        console.log(x);
+        if (x=='enlace'){
+            document.getElementById('enlaces').classList.remove('enlace');
+            document.getElementById('enlaces').classList.add('enlace1');
+
+        } else {
+            document.getElementById('enlaces').classList.remove('enlace1');
+            document.getElementById('enlaces').classList.add('enlace');
+        }
+        
+
+    }
+</script>
+</html>

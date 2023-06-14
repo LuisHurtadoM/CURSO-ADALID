@@ -1,0 +1,36 @@
+.contenido{
+    background-color:orange;
+    font-family: Verdana;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    
+}
+h1{
+    text-align: center;
+}
+
+.titulo{
+    color: brown;
+
+}
+.elemento-lista{
+    list-style-type:circle;
+    margin-left: 30px;
+}
+a{
+    color: aqua;
+    text-decoration: underline;
+}
+
+a:visited{
+    color: orangered;
+}
+a:hover{
+    text-decoration: none;
+    color: green;
+}
+
+a:active{
+    color: lime;
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="area-trabajo" id="area-trabajo">
+
+        <div class="card" >
+            <img id="card-img-top" src="p5.avif" alt="Card image cap">
+            <div id="card-body">
+                <p id="card-text"  ></p>
+<!--                 <span > ensayo</span>
+                <p id="ingreso-usuario" name="parrafo2"></p> -->
+                <input type="text" id="input-usuario" ><br>
+                <input type="text" name="parrafo1" style="border-color: blue;">
+                <input type="text" id="input-color-letra" placeholder="Indica el color que deseas usar"> 
+                <input type="color" name="" id="input-color">
+                <button onclick="document.getElementById('card-text').innerHTML='Primer cambio'; document.getElementById('btn1').style='background-color: red; color: white'" id="btn1"> Click 1</button>
+                <button onclick="document.getElementById('card-img-top').src='p6.avif'" id="btn2"> Cambiar imagen</button>
+                <button onclick="document.getElementById('area-trabajo').style='background-color:'+ document.getElementById('input-color').value;">Cambia color</button>
+                <button onclick="document.getElementById('card-body').style='color:'+ document.getElementById('input-color-letra').value;">Cambia color letra</button>
+                
+            </div>
+    </div>
+
+
+    <script>
+        document.getElementById("card-text").innerHTML = "Hello World";
+        document.getElementById("card-body").style="border-style: solid 1px gray";
+        document.getElementById("btn1").style="width: 100px; background-color: gray; color: black";
+        document.getElementById("btn2").style="width: 100px; background-color: red; color: white";
+    </script>
+
+</body>
+</html>

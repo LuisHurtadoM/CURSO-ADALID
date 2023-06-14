@@ -1,0 +1,29 @@
+.estilo-tabla{
+    margin-left: auto;
+    margin-right: auto;
+    border: dashed 3px green;
+    border-collapse: collapse;
+    margin-left: 5%;
+    margin-top: 5%;
+    margin-right: 5%;
+    margin-bottom: 5%;
+    width: 600px;
+    height:600px;
+}
+.estilo-celda{
+    width: 25%;
+    height: 25%;
+    margin-left: 5%;
+    margin-top: 5%;
+    margin-right: 5%;
+    margin-bottom: 5%;
+    padding-left: 5%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    padding-right: 5%;
+}
+.texto-vertical{
+   
+    transform: rotate(90deg);
+        
+}
